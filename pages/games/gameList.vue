@@ -6,7 +6,9 @@
                 :key="games.id"
                 class="ma-2 mt-8"
                 max-width="344"
+                :to="{path: '/games/gameDetail/' + games.id}"
                 @click="handleGameClicked(games)"
+                
                 
             >
                 <v-img
@@ -56,11 +58,11 @@ export default {
             const url = "https://free-to-play-games-database.p.rapidapi.com/api/games"
             axios.get(url, config).then((res) => {
                 this.results = res.data
-                console.log(res.data);
+                // console.log(res.data);
             })
         },
         handleGameClicked(games) {
-            console.log("Games", games.id);
+            // console.log("Games", games.id);
             this.id = games.id
 
         }

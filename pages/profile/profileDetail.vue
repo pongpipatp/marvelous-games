@@ -78,7 +78,7 @@
                 <v-list-item three-line>
                 <v-list-item-avatar
                     size="80"
-                ><img src="@/assets/program.jpg" /></v-list-item-avatar>
+                ><img src="@/assets/ai.png" /></v-list-item-avatar>
                 <v-list-item-content>
                     <div class="">
                     Training Wheels

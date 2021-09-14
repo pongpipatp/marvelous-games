@@ -22,18 +22,19 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="clipped"
-      fixed
       app
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      
       <div class="profile-info">
         <v-row>
           <v-toolbar-title class="mr-10" v-text="title" />
+          <NuxtLink to="/profile/profileDetail">
           <v-avatar
             color="primary"
             size="35"
           ><img src="@/assets/person.jpg" /></v-avatar>
+          </NuxtLink>
         </v-row>
       </div>
       
@@ -63,12 +64,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Games List',
-          to: "/games/gameList"
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Games Detail',
-          to: "/games/gameDetail/"
+          to: "/"
         },
         {
           icon: 'mdi-chart-bubble',
@@ -76,7 +72,7 @@ export default {
           to: "/profile/profileDetail/"
         }
       ],
-      title: 'Chopper_!'
+      title: 'Chopper P.'
     }
   }
 }
