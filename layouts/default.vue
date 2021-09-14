@@ -29,7 +29,7 @@
       <div class="profile-info">
         <v-row>
           <v-toolbar-title class="mr-10" v-text="title" />
-          <NuxtLink to="/profile/profileDetail">
+          <NuxtLink to="/profileDetail">
           <v-avatar
             color="primary"
             size="35"
@@ -47,7 +47,6 @@
       </v-container>
     </v-main>
     <v-footer
-      :absolute="!fixed"
       app
     >
       <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -68,8 +67,13 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
+          title: 'Game Detail',
+          to: "/gameDetail/:id"
+        },
+        {
+          icon: 'mdi-chart-bubble',
           title: 'Profile Detail',
-          to: "/profile/profileDetail/"
+          to: "/profileDetail/"
         }
       ],
       title: 'Chopper P.'

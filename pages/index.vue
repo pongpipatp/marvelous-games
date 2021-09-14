@@ -6,7 +6,7 @@
                 :key="games.id"
                 class="ma-2 mt-8"
                 max-width="344"
-                :to="{path: '/games/gameDetail/' + games.id}"
+                :to="{path: '/gameDetail/' + games.id}"
                 @click="handleGameClicked(games)"
                 
                 

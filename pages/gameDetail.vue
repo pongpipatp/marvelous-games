@@ -1,7 +1,6 @@
 <template>
     <div>
         <div>
-        {{ $route.params.id }}
             <v-card
                 class="mx-auto mt-4"
                 max-width="950"
@@ -49,7 +48,7 @@ export default {
             const url = "https://free-to-play-games-database.p.rapidapi.com/api/game?id=" + this.gameId
             axios.get(url, config).then((res) => {
                 this.results = res.data
-            //  console.log(res.data);
+            // console.log(res.data);
             })
         }
     }
